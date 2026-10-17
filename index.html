@@ -202,23 +202,29 @@
             </div>
             
         <div class="form-group">
-            <label>Selecciona los productos que deseas</label>
+            <label>Selecciona los productos y cantidades que deseas</label>
+            
+    <div class="opcion-producto">
+        <label for="desodorantes">Desodorantes</label>
+        <input type="number" id="desodorantes"
+               name="cantidad_desodorantes"
+               min="0" max="20" value="0">
+    </div>
 
-            <div class="opcion-producto">
-                <input type="checkbox" id="desodorantes" name="productos[]" value="Desodorantes">
-                <label for="desodorantes">Desodorantes</label>
-            </div>
+    <div class="opcion-producto">
+        <label for="perfume">Perfumes</label>
+        <input type="number" id="perfume"
+               name="cantidad_perfumes"
+               min="0" max="20" value="0">
+    </div>
 
-            <div class="opcion-producto">
-                <input type="checkbox" id="perfume" name="productos[]" value="Perfume">
-                <label for="perfume">Perfume</label>
-            </div>
-
-            <div class="opcion-producto">
-                <input type="checkbox" id="accesorios" name="productos[]" value="Accesorios personales">
-                <label for="accesorios">Accesorios personales</label>
-            </div>
-        </div>
+    <div class="opcion-producto">
+        <label for="accesorios">Accesorios personales</label>
+        <input type="number" id="accesorios"
+               name="cantidad_accesorios"
+               min="0" max="20" value="0">
+    </div>
+</div>
         <button type="submit">Enviar Solicitud</button>
     </form>
     </section>
